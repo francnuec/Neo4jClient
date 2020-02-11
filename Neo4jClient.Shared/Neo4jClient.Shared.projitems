@@ -9,6 +9,7 @@
     <Import_RootNamespace>Neo4jClient</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)AddressResolver.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AggregateExceptionExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AmbiguousRelationshipDirectionException.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ApiModels\BatchResponse.cs" />
@@ -31,6 +32,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)ApiModels\RelationshipApiResponse.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ApiModels\RelationshipTemplate.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ApiModels\RootApiResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Attributes\Neo4jDateTimeAttribute.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BoltGraphClient.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)CypherPartialResult.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Cypher\All.cs" />
@@ -40,6 +42,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Cypher\CypherFluentQuery`Return.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Cypher\CypherFluentQuery`TResult.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Cypher\CypherFluentQuery`Where.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Cypher\CypherFluentQuery`WithBookmark.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Cypher\CypherFluentQuery`With.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Cypher\CypherPlanner.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Cypher\CypherQuery.cs" />
@@ -73,6 +76,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Cypher\VbComparer.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DeleteMode.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DetachedNodeException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DriverWrapper.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Execution\BatchExecutionPolicy.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Execution\CypherExecutionPolicy.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Execution\CypherTransactionExecutionPolicy.cs" />
@@ -103,6 +107,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Execution\RestExecutionPolicy.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Extensions\EnumerableExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Extensions\MemberInfoExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\ObjectExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GraphClient.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GraphClientExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GraphClientFactory.cs" />
@@ -196,6 +201,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Serialization\TimeZoneInfoConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Serialization\TypeConverterBasedJsonConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Serialization\TypeMapping.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Serialization\ZonedDateTimeConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)StatementResultHelper.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Transactions\BoltResponse.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Transactions\IInternalTransactionalGraphClient.cs" />
@@ -206,6 +212,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Transactions\ITransactionManager.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Transactions\ITransactionResourceManager.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Transactions\TransactionHttpUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UriCreator.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Utilities.cs" />
   </ItemGroup>
   <ItemGroup>
